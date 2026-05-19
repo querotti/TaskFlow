@@ -1,0 +1,22 @@
+{
+  "name": "taskflow-portfolio",
+  "version": "1.0.0",
+  "description": "Aplicacao full stack iniciante para organizar tarefas e metas pessoais.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend",
+    "backend",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

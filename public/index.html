@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow | Organizador de Tarefas</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <h1>TaskFlow</h1>
+        <p class="subtitle">Organize tarefas, acompanhe prioridades e mantenha seu dia em movimento.</p>
+      </div>
+      <a class="header-link" href="https://github.com/querotti" target="_blank" rel="noreferrer">GitHub</a>
+    </header>
+
+    <main class="layout">
+      <section class="panel summary-panel" aria-label="Resumo das tarefas">
+        <article>
+          <span id="totalTasks">0</span>
+          <p>Total</p>
+        </article>
+        <article>
+          <span id="pendingTasks">0</span>
+          <p>Pendentes</p>
+        </article>
+        <article>
+          <span id="doneTasks">0</span>
+          <p>Concluidas</p>
+        </article>
+      </section>
+
+      <section class="panel form-panel" aria-labelledby="formTitle">
+        <h2 id="formTitle">Nova tarefa</h2>
+        <form id="taskForm">
+          <label>
+            Titulo
+            <input id="title" name="title" type="text" placeholder="Ex: Revisar README" required />
+          </label>
+
+          <label>
+            Descricao
+            <textarea id="description" name="description" rows="4" placeholder="Descreva o que precisa ser feito" required></textarea>
+          </label>
+
+          <div class="form-grid">
+            <label>
+              Categoria
+              <input id="category" name="category" type="text" placeholder="Estudos" required />
+            </label>
+
+            <label>
+              Prioridade
+              <select id="priority" name="priority" required>
+                <option value="baixa">Baixa</option>
+                <option value="media" selected>Media</option>
+                <option value="alta">Alta</option>
+              </select>
+            </label>
+          </div>
+
+          <button type="submit">Adicionar tarefa</button>
+          <p id="formMessage" class="form-message" role="status"></p>
+        </form>
+      </section>
+
+      <section class="tasks-section" aria-labelledby="tasksTitle">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Meu quadro</p>
+            <h2 id="tasksTitle">Tarefas</h2>
+          </div>
+
+          <div class="filters" aria-label="Filtros de tarefa">
+            <button class="filter-button active" data-filter="todas" type="button">Todas</button>
+            <button class="filter-button" data-filter="pendente" type="button">Pendentes</button>
+            <button class="filter-button" data-filter="andamento" type="button">Em andamento</button>
+            <button class="filter-button" data-filter="concluida" type="button">Concluidas</button>
+          </div>
+        </div>
+
+        <div id="taskList" class="task-list"></div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <p>Todos os direitos reservados para Murilo Querotti.</p>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

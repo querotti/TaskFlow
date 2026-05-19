@@ -1,0 +1,29 @@
+[
+  {
+    "id": "task-001",
+    "title": "Preparar projeto para o GitHub",
+    "description": "Organizar arquivos, conferir README e fazer o primeiro commit.",
+    "category": "Portfolio",
+    "priority": "alta",
+    "status": "andamento",
+    "createdAt": "2026-05-19T12:00:00.000Z"
+  },
+  {
+    "id": "task-002",
+    "title": "Estudar consumo de API com fetch",
+    "description": "Entender como o frontend conversa com o backend usando JavaScript.",
+    "category": "Estudos",
+    "priority": "media",
+    "status": "pendente",
+    "createdAt": "2026-05-19T12:10:00.000Z"
+  },
+  {
+    "id": "task-003",
+    "title": "Publicar no portfolio pessoal",
+    "description": "Criar uma descricao curta do projeto e adicionar link do repositorio.",
+    "category": "Portfolio",
+    "priority": "baixa",
+    "status": "concluida",
+    "createdAt": "2026-05-19T12:20:00.000Z"
+  }
+]
