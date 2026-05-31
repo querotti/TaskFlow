@@ -1,6 +1,6 @@
 # TaskFlow
 
-TaskFlow e um projeto full stack para organizar tarefas, acompanhar progresso e registrar prioridades do dia. Ele foi criado para ser simples de rodar, facil de entender e bom para demonstrar fundamentos de frontend, backend e API REST.
+TaskFlow é um projeto full stack para organizar tarefas, acompanhar progresso e registrar prioridades do dia. Ele foi criado para ser simples de rodar, facil de entender e bom para demonstrar fundamentos de frontend, backend e API REST.
 
 Desenvolvido por [Murilo Querotti](https://github.com/querotti).
 
